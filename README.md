@@ -9,3 +9,4 @@ node登录segmentfault并修改个人简介
  
 登录成功后我只简单的做了个人简介的修改（将index.js中最后一个请求的description参数内容修改为自己的个人简介），其实还可以做更多事情，重点在登陆
 # 相关文章
+https://segmentfault.com/a/1190000015586292
