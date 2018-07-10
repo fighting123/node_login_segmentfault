@@ -58,14 +58,15 @@ async.series([
       .set(header)
       .type('form')
       .send({
-        description: '努力coding的喵~~~'
+        description: '努力coding的小喵~~~'
       })
       .end((err, res) => {
         if(err) throw err
-        if (res.status === 200) {
-          console.log('编辑成功：' + res.status)
+        let result = JSON.parse(res.text)
+        if (result.status === 0) {
+          console.log('编辑成功')
         } else {
-          console.log('编辑失败：' + res.text)
+          console.log('编辑失败：' + result.data)
         }
       })
     cb(null, 1)
